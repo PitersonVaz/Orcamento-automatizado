@@ -1,26 +1,29 @@
-# Automação de Orçamentos e Reservas
+# Sistema de Automacao de Orcamentos e Reservas (Orvex Locacoes)
 
-Projeto desenvolvido em Python para automatizar a criação de orçamentos e reservas, com direcionamento das informações para o WhatsApp.
+Sistema de automacao comercial desenvolvido em Python para uso interno da Orvex Locacoes. A aplicacao automatiza a geracao de orcamentos para locacao de materiais de eventos, apresentacao de termos contratuais, calculo de taxa de reserva e disparo de mensagens formatadas via WhatsApp Web.
 
-## Sobre o projeto
+---
 
-Este projeto foi desenvolvido com o objetivo de facilitar o processo de elaboração de orçamentos e reservas, organizando as informações e tornando o atendimento mais rápido e prático.
+## O Problema
+O atendimento manual para orcamento de locacoes gerava erros em calculos de taxas, demora na emissao dos termos de contrato e tempo excessivo na digitacao das informacoes do pedido para envio ao cliente via WhatsApp.
 
-A aplicação permite trabalhar com os dados necessários para a criação do orçamento e preparar as informações para serem encaminhadas pelo WhatsApp.
+## A Solucao
+Uma aplicacao de terminal (CLI) que coleta os dados do evento, realiza os calculos matematicos do orcamento com precisao e utiliza a API de links do WhatsApp (`wa.me`) para abrir automaticamente mensagens formatadas para a empresa e para o cliente.
 
-## Tecnologias utilizadas
+### Funcionalidades Principais:
+- Geracao de numero de pedido unico e aleatorio.
+- Calculo automatico do orcamento (mesas, toalhas e taxa de entrega).
+- Calculo do valor do sinal de reserva Pix.
+- Exibicao automatica do contrato e regras de locacao.
+- Abertura automatica de abas no navegador com links diretos do WhatsApp.
 
-- Python
+---
 
-## Objetivo
+## Tecnologias Utilizadas
+- Python 3 (Modulos nativos: `random`, `urllib.parse`, `webbrowser`)
 
-Este projeto foi desenvolvido como parte do meu processo de aprendizado em programação e desenvolvimento de sistemas, buscando aplicar na prática conceitos estudados durante a graduação.
+---
 
-## Formação
-
-Análise e Desenvolvimento de Sistemas  
-2º semestre — em andamento
-
-## Autor
-
-Piterson Gaudencio Vaz
+## Estrutura do Projeto
+- `main.py`: Script principal contendo a logica do menu, calculos do orcamento e integracao com WhatsApp.
+-
